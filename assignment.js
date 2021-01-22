@@ -1,5 +1,10 @@
+// https://github.com/kaderfoysal600/assignment-3
+
 //** kilometer to Meter*/
 function kilometerToMeter(kilo) {
+    if (kilo<0){
+        return("your number is wrong")
+    }
     meter = kilo * 1000;
     return meter;
 }
@@ -9,11 +14,14 @@ console.log(result);
 
 //*budget calculator**//
 function budgetCalculator(watch, phone, laptop) {
+    if (watch,phone,laptop<0){
+        return("your input is wrong. please input a posetive number")
+    }
     var watchTotal = watch * 50;
     var phoneTotal = phone * 100;
     var laptopTotal = laptop * 500;
     var totalprice = watchTotal + phoneTotal + laptopTotal
-    return (totalprice)
+    return totalprice
 }
 result2 = budgetCalculator(2, 2, 2);
 console.log(result2);
@@ -21,6 +29,9 @@ console.log(result2);
 
 //**hotel cost */
 function hotelCost(cost) {
+    if (cost<0){
+        return("your input is wrong. please input a posetive number")
+    }
     if (cost <= 10) {
         TotalCost = cost * 100;
     }
@@ -32,7 +43,7 @@ function hotelCost(cost) {
     }
     return TotalCost
 }
-result4 = hotelCost(15);
+result4 = hotelCost(22);
 console.log(result4);
 
 
